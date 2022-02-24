@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesmovies/movies.css">
+</head>
+
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+</body>
+
+</html>
+
+<script type="module">
+    import { makeapicall, appendpicture } from "./scripts/movies.js";
+
+    let images_data1 = await makeapicall("https://api.themoviedb.org/3/tv/popular?api_key=3bc06deaaeabe85858ae8d32c24cae1f&language=en-US&page=1")
+    let parent1 = document.getElementById("box1")
+    appendpicture(images_data1, parent1)
+
+    let images_data2 = await makeapicall("https://api.themoviedb.org/3/trending/movie/week?api_key=3bc06deaaeabe85858ae8d32c24cae1f")
+    let parent2 = document.getElementById("box2")
+    appendpicture(images_data2, parent2)
+
+
+    let images_data3 = await makeapicall("https://api.themoviedb.org/4/list/1?api_key=3bc06deaaeabe85858ae8d32c24cae1f")
+    let parent3 = document.getElementById("box3")
+    appendpicture(images_data3, parent3)
+
+
+    let images_data4 = await makeapicall("https://api.themoviedb.org/3/movie/upcoming?api_key=3bc06deaaeabe85858ae8d32c24cae1f&language=en-US&page=1")
+    let parent4 = document.getElementById("box4")
+    appendpicture(images_data4, parent4)
+</script>
