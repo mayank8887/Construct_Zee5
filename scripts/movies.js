@@ -13,6 +13,7 @@ async function makeapicall(url) {
 function appendpicture(data, parent) {
     data.forEach((element) => {
         let div = document.createElement("div")
+        // div.setAttribute("class", "carousel-cell")
 
         let image = document.createElement("img")
         image.src = `https://image.tmdb.org/t/p/w500/${element.poster_path}`;
@@ -36,3 +37,5 @@ function appendpicture(data, parent) {
 }
 
 export { makeapicall, appendpicture }
+
+ 
