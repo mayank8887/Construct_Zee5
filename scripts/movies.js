@@ -29,9 +29,6 @@ function appendpicture(data, parent) {
         button.textContent = "WATCH"
         button.style = "white";
 
-        let title = document.createElement("p")
-        title.innerText = element.title;
-
         div.append(image, title, button)
         div.onclick = () => {
             var arr = []
