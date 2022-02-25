@@ -16,14 +16,19 @@ function appendpicture(data, parent) {
 
         let image = document.createElement("img")
         image.src = `https://image.tmdb.org/t/p/w500/${element.poster_path}`;
-
+          
+        let title = document.createElement("p")
+        if(element.original_name){
+        title.textContent= element.original_name;}
+        else{
+            title.textContent=element.original_title;
+        }
+       
         let button = document.createElement("button")
         button.textContent = "WATCH"
         button.style = "white";
 
-        let title = document.createElement("p")
-        title.innerText = element.original_name
-
+        
         div.append(image, title, button)
         div.onclick = () => {
             var arr = []

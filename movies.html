@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <div id="box1"></div>
     <div id="box2"></div>
     <div id="box3"></div>
     <div id="box4"></div>
+    <div id="box1"></div>
 </body>
 
 </html>
@@ -26,6 +26,7 @@
     appendpicture(images_data1, parent1)
 
     let images_data2 = await makeapicall("https://api.themoviedb.org/3/trending/movie/week?api_key=3bc06deaaeabe85858ae8d32c24cae1f")
+    console.log(images_data2)
     let parent2 = document.getElementById("box2")
     appendpicture(images_data2, parent2)
 
