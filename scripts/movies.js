@@ -11,9 +11,10 @@ async function makeapicall(url) {
 }
 
 function appendpicture(data, parent) {
+    console.log("data:",data)
     data.forEach((element) => {
         let div = document.createElement("div")
-
+         
         let image = document.createElement("img")
         image.src = `https://image.tmdb.org/t/p/w500/${element.poster_path}`;
           
