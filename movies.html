@@ -5,19 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/d5d0d8bb45.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/321450d5a2.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="./stylesmovies/movies.css">
     <title>Document</title>
-    <link rel="stylesheet" href="stylesmovies/movies.css">
+   
 </head>
 
 <body>
+    <div id="box1"></div>
     <div id="box2"></div>
     <div id="box3"></div>
     <div id="box4"></div>
-    <div id="box1"></div>
+    
+    <div id="container">
+
+    </div>
+    
 </body>
 
 </html>
@@ -28,10 +34,17 @@
 
 
 <script type="module">
+     import foterDiv from "./scripts/foter.js";
+    let foter= document.getElementById("container");
+    foter.innerHTML= foterDiv()
+    // import { makeapicall, appendpicture } from "./scripts/movies.js";
+    // import foterDiv from "./scripts/foter.js";
+    // let foter= document.getElementById("container");
+    // foter.innerHTML= foterDiv()
     import { makeapicall, appendpicture } from "./scripts/movies.js";
 
     let images_data1 = await makeapicall("https://api.themoviedb.org/3/tv/popular?api_key=3bc06deaaeabe85858ae8d32c24cae1f&language=en-US&page=1")
-    let parent1 = document.querySelector(".product-container")
+    let parent1 = document.querySelector("#box1")
     appendpicture(images_data1, parent1)
 
     let images_data2 = await makeapicall("https://api.themoviedb.org/3/trending/movie/week?api_key=3bc06deaaeabe85858ae8d32c24cae1f")

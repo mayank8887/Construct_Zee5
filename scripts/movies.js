@@ -25,7 +25,8 @@ function appendpicture(data, parent) {
             title.textContent=element.original_title;
         }
        
-        let button = document.createElement("button")
+        let button = document.createElement("button");
+        button.setAttribute("id", "btn")
         button.textContent = "WATCH"
         button.style = "white";
 
