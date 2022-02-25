@@ -11,6 +11,7 @@ async function makeapicall(url) {
 }
 
 function appendpicture(data, parent) {
+    console.log("data:",data)
     data.forEach((element) => {
         let div = document.createElement("div")
          

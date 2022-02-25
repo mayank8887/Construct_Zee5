@@ -367,7 +367,7 @@
         <h2>Latest Hindi Episodes Free</h2>
        <div id="slidemovie3" class="cl2 slider"> </div>
       
-        <h2>Latest Marathi Episodes Free</h2>
+        <h2>Latest English Episodes Free</h2>
         <div id="slidemovie4" class="cl2 slider"></div>
       
         <h2>Top 10 in India</h2>
@@ -495,7 +495,7 @@ import { makeapicall, appendpicture } from "./scripts/movies.js";
     appendpicture(images_data3, parent3)
 
 
-    let images_data4 = await makeapicall("https://api.themoviedb.org/3/tv/popular?api_key=3bc06deaaeabe85858ae8d32c24cae1f&language=en-US&page=1")
+    let images_data4 = await makeapicall("https://api.themoviedb.org/3/tv/popular?api_key=3bc06deaaeabe85858ae8d32c24cae1f&language=hi&page=2")
     let parent4 = document.getElementById("slidemovie4")
     appendpicture(images_data4, parent4)
 
@@ -507,7 +507,7 @@ import { makeapicall, appendpicture } from "./scripts/movies.js";
     let parent6 = document.getElementById("slidemovie6")
     appendpicture(images_data6, parent6)
 
-    let images_data7 = await makeapicall("https://api.themoviedb.org/3/movie/upcoming?api_key=3bc06deaaeabe85858ae8d32c24cae1f&language=en-US&page=1")
+    let images_data7 = await makeapicall("https://api.themoviedb.org/3/tv/popular?api_key=3bc06deaaeabe85858ae8d32c24cae1f")
     let parent7 = document.getElementById("slidemovie7")
     appendpicture(images_data7, parent7)
     let images_data8 = await makeapicall("https://api.themoviedb.org/3/movie/upcoming?api_key=3bc06deaaeabe85858ae8d32c24cae1f&language=en-US&page=1")
