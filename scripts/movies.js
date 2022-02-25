@@ -13,7 +13,7 @@ async function makeapicall(url) {
 function appendpicture(data, parent) {
     data.forEach((element) => {
         let div = document.createElement("div")
-
+         
         let image = document.createElement("img")
         image.src = `https://image.tmdb.org/t/p/w500/${element.poster_path}`;
 
@@ -22,7 +22,7 @@ function appendpicture(data, parent) {
         button.style = "white";
 
         let title = document.createElement("p")
-        title.innerText = element.original_name
+        title.innerText = element.title;
 
         div.append(image, title, button)
         div.onclick = () => {
