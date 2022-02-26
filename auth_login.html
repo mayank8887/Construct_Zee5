@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>auth_login</title>
+    <link rel="stylesheet" href="./stylesmovies/auth_login.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="content">
+        <p class="first_p">Login to ZEE5</p>
+        <p class="second_p">
+          Login to continue enjoying uninterrupted video and <br />
+          personalised experience.
+        </p>
+        <div class="logos">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShRFxS9dBwUNzrV-JQqsJqPesO3JwzM3zlF6iwjAxMdomw5nMEvDg-UbWUqgK5tIjJmlk&usqp=CAU"
+            alt=""
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnmCeM6dZlvIUPqGLbDfKPd1IAQMKIpNAnPta5Gmm9N7DV7GIdGqchuNXePPYxathC098&usqp=CAU"
+            alt=""
+          />
+          <img
+            src="https://dexibell.com/app/uploads/2018/05/facebook-logo.png"
+            alt=""
+          />
+          <img
+            src="https://static.dezeen.com/uploads/2012/06/dezeen_twitter-bird.gif"
+            alt=""
+          />
+        </div>
+        <div class="or">
+          <p>or</p>
+        </div>
+        <div id="login_form">
+          <form action="">
+            <input type="text" id="login_username" placeholder="username" />
+            <input type="password" id="login_password" placeholder="password" />
+          </form>
+          <p class="forget">Forget Password ?</p>
+          <button class="login_btn" onclick="Login()">login</button>
+          <p id="already">
+            NEW TO ZEE5?
+            <span
+              onclick='window.location.href="auth_signup.html"'
+              class="goToLogin"
+              >Register</span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/auth.js"></script>

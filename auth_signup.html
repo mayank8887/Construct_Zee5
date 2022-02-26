@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>auth_signup</title>
+    <link rel="stylesheet" href="./stylesmovies/auth_signup.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="register_form">
+        <p class="first_p">Create a new account</p>
+        <p class="second_p">
+          Create an account to continue enjoying <br />
+          uninterrupted video and personalised <br />
+          experience
+        </p>
+        <div class="logos">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnmCeM6dZlvIUPqGLbDfKPd1IAQMKIpNAnPta5Gmm9N7DV7GIdGqchuNXePPYxathC098&usqp=CAU"
+            alt=""
+          />
+          <p>Sign in</p>
+        </div>
+        <div class="or">
+          <p>or</p>
+        </div>
+        <!-- <h1>Register</h1> -->
+        <form action="">
+          <h3>Fill User Details</h3>
+          <input type="text" id="name" placeholder="Enter Name *" />
+          <input type="text" id="email" placeholder="Enter Email *" />
+          <input type="password" id="pass" placeholder="Enter Password *" />
+          <input type="text" id="username" placeholder="Enter Username *" />
+          <input type="text" id="mobile" placeholder="Enter Phone Number *" />
+          <input
+            type="text"
+            id="description"
+            placeholder="Enter Description *"
+          />
+        </form>
+        <p class="term_policy">
+          By proceding to agree to our
+          <a href="https://www.zee5.com/termsofuse">term of services</a> &
+          <a href="https://www.zee5.com/privacypolicy">privacy policy</a>
+        </p>
+        <button class="btn_register" onclick="register()">Register</button>
+        <p id="already">
+          Already registered?
+          <span
+            onclick='window.location.href="auth_login.html"'
+            class="goToLogin"
+            >Login</span
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/auth.js"></script>
