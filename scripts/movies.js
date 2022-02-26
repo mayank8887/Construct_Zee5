@@ -34,7 +34,7 @@ function appendpicture(data, parent) {
         div.onclick = () => {
             var arr = []
             arr.push(element)
-            localStorage.setItem("zee5:", JSON.stringify(arr));
+            localStorage.setItem("zee5", JSON.stringify(arr));
             window.location.href = "video.html"
         }
         parent.append(div)

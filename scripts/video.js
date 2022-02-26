@@ -1,6 +1,6 @@
 import{makeapicall,appendpicture} from "./movies.js";
 
-var play=JSON.parse(localStorage.getItem("zee5:"));
+var play=JSON.parse(localStorage.getItem("zee5"));
 console.log("play",play[0].id)
 let ids=await makeapicall(`https://api.themoviedb.org/3/movie/${play[0].id}/videos?api_key=3bc06deaaeabe85858ae8d32c24cae1f&language=en-US`)
 

@@ -375,3 +375,157 @@ margin-left: 64px;
 .showcontent:nth-child(5){
 margin-right: 120px;
 }
+
+
+ 
+   #slidemovie2 {
+    display: flex;
+}
+
+#slidemovie2>div {
+    margin: 13px;
+    width: 250px;
+    height: 430px;
+    /* border:2px solid blue; */
+    /* background-color: white; */
+    border-radius: 15px;
+    
+}
+#slidemovie2>div>button{
+    margin:auto auto 15px 15px;
+   
+}
+#slidemovie2>div:hover{
+    width:250px;
+    height:450px;
+    background-color: white;
+    color: black;
+}
+
+#slidemovie2>div>img {
+    width: 240px;
+    height: 347px;
+    border-radius: 8px;
+    text-align: center;
+
+}
+#slidemovie2>div>img:hover{
+    width:260px;
+    height:360px;
+    opacity: 1;
+}
+
+#slidemovie2>div>p {
+    color: white;
+}
+
+#box2 {
+    display: flex;
+}
+
+#box2>div {
+    margin-top: 20px;
+    margin: 13px;
+    width: 250px;
+    height: 430px;
+    /* border:2px solid blue; */
+    background-color: white;
+    border-radius: 15px;
+}
+#box2>div:hover{
+    width:250px;
+    height:350px;
+}
+
+#box2>div>img {
+    width: 250px;
+    height: 347px;
+    border-radius: 8px;
+    text-align: center;
+
+}
+#box2>div>img:hover{
+    width:270px;
+    height:380px;
+    opacity: 1;
+}
+
+#box2>div>p {
+    color: white;
+}
+
+
+
+#box3 {
+    display: flex;
+}
+
+#box3>div {
+    margin: 13px;
+    width: 250px;
+    height: 430px;
+    /* border:2px solid blue; */
+    background-color: white;
+    border-radius: 8px;
+}
+#box3>div:hover{
+    width:250px;
+    height:350px;
+}
+
+#box3>div>img {
+    width: 250px;
+    height: 347px;
+    border-radius: 8px;
+    text-align: center;
+
+}
+#box3>div>img:hover{
+    width:270px;
+    height:380px;
+    opacity: 1;
+}
+
+#box3>div>p {
+    color: white;
+}
+
+
+
+#box4 {
+    display: flex;
+}
+
+#box4>div {
+    margin: 13px;
+    width: 250px;
+    height: 430px;
+    /* border:2px solid blue; */
+    background-color: white;
+    border-radius: 15px;
+}
+#box4>div:hover{
+    width:250px;
+    height:350px;
+}
+
+#box4>div>img {
+    width: 250px;
+    height: 347px;
+    border-radius: 8px;
+    text-align: center;
+
+}
+#box4>div>img:hover{
+    width:270px;
+    height:380px;
+    opacity: 1;
+}
+
+#box4>div>p {
+    color: white;
+}
+
+/* body{
+    position: relative;
+} */
