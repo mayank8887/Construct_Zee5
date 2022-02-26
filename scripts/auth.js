@@ -84,7 +84,7 @@ let getUser = async (username, token) => {
 
 let SuccessAndGo = (data, username) => {
   if (username === data.username) {
-    window.location.href = "home.html";
+    window.location.href = "index.html";
   } else {
     alert("Invalid Username / Password");
   }
