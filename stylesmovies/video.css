@@ -41,6 +41,19 @@ h2{
         
     visibility: hidden;
     }
+.cl1{
+    overflow-x:auto;
+}
+.cl1>div{
+    position:relative; 
+        
+          transition: 0.5s;
+}
+.cl1::-webkit-scrollbar{
+        
+    visibility: hidden;
+    }
+    
 
 #box2>div {
     margin: 13px;
