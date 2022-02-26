@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(10, 3, 17);
+  color: white;
+  font-family: NotoSansRegular, sans-serif;
+}
+#container {
+  margin-top: 100px;
+}
+#content {
+  text-align: center;
+}
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.first_p {
+  font-weight: bold;
+}
+.second_p {
+  opacity: 0.6;
+  margin: 30px 0px;
+}
+.or {
+  display: flex;
+  justify-content: center;
+}
+.or > p {
+  border-radius: 50%;
+  background-color: rgb(129, 123, 123);
+  color: white;
+  padding: 10px;
+  opacity: 0.6;
+}
+form {
+  width: 320px;
+  /* display: flex;
+    justify-content: center; */
+  width: 320px;
+  margin: 20px auto;
+}
+input {
+  background-color: rgb(10, 3, 17);
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  color: white;
+  width: 320px;
+  padding: 8px;
+  font-size: medium;
+}
+.login_btn {
+  width: 322px;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: large;
+  margin-top: 10px;
+}
+.forget {
+  font-size: small;
+  color: rgb(173, 129, 214);
+}
+#already {
+  font-size: small;
+  color: white;
+}
+.goToLogin {
+  font-size: small;
+  color: rgb(173, 129, 214);
+}
