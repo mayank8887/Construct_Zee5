@@ -12,7 +12,6 @@ We have made a clone of the website zee5.com . zee5 is a Indian digital entertai
 - [Daniyal Shaikh](https://github.com/daniyal4engg)
 - [Salem Basumata](https://github.com/salemebasumata58)
 - [Himanshu0316](https://github.com/Himanshu0316)
-- 
 
 
 ## Tech Stack:
